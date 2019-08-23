@@ -32,7 +32,6 @@ describe 'When user visits astronauts index' do
     capricorn.astronauts << niel
     gemini.astronauts << niel
     gemini.astronauts << phil
-    binding.pry
     visit '/astronauts'
     expect(page).to have_content("Niel Armstrong: Apollo 13, Capricorn 4, Gemini 7")
     expect(page).to have_content("Phil Armstrong: Apollo 13, Gemini 7")

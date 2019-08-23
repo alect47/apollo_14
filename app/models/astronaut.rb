@@ -10,7 +10,7 @@ class Astronaut < ApplicationRecord
 
   def mission_list
     mish = ""
-    missions. do |mission|
+    missions.each do |mission|
       mish << "mission.title, ""
     end
     mish
