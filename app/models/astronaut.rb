@@ -7,5 +7,15 @@ class Astronaut < ApplicationRecord
   def self.average_age
     average(:age)
   end
-  
+
+  def mission_list
+    mish = ""
+    missions. do |mission|
+      mish << "mission.title, ""
+    end
+    mish
+    # Mission.order(title: :desc)
+    # Mission.select(:title)
+    # Mission.where(astronaut_missions:).pluck(:title)
+  end
 end

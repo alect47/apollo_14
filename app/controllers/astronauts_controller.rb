@@ -4,4 +4,8 @@ class AstronautsController < ApplicationController
     @astronauts = Astronaut.all
   end
 
+  # def missions
+  #   @astronauts = Astronaut.all
+  # end
+
 end
